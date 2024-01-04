@@ -1,7 +1,6 @@
 import { Button } from './FeedbackOptions.styled';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
-  //   console.log(this.props);
   return (
     <div>
       {options.map(option => (
@@ -10,7 +9,7 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
           type="button"
           onClick={() => onLeaveFeedback(option)}
         >
-          {option}
+          {option.charAt(0).toUpperCase() + option.slice(1)}
         </Button>
       ))}
     </div>
