@@ -1,4 +1,4 @@
-import { Container, Item, Value } from './Statistics.styled';
+import { Item, Value } from './Statistics.styled';
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
   return (
